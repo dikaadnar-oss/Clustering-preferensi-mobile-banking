@@ -467,7 +467,7 @@ if uploaded_file is not None:
                 plot_labels.extend([f'{var}\n(Cluster {selected_cluster})', f'{var}\n(Lainnya)'])
 
             fig_b, ax_b = plt.subplots(figsize=(8, 5))
-            bp = ax_b.boxplot(plot_data, tick_labels=plot_labels, patch_artist=True)
+            bp = ax_b.boxplot(plot_data, labels=plot_labels, patch_artist=True)
             colors = []
             for _ in dim_vars:
                 colors.extend(['steelblue', 'lightgray'])
